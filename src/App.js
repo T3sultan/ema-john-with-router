@@ -10,8 +10,8 @@ import Shop from './components/Shop/Shop';
 function App() {
   return (
     <div>
-      <Header></Header>
       <Router>
+      <Header></Header>
         <Switch>
           <Route exact path="/">
             <Shop></Shop>
@@ -26,7 +26,7 @@ function App() {
             <Inventory></Inventory>
           </Route>
           <Route path="*">
-           <NotFoundPage></NotFoundPage>
+            <NotFoundPage></NotFoundPage>
           </Route>
         </Switch>
       </Router>
