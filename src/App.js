@@ -5,13 +5,14 @@ import Inventory from './components/Inventory/Inventory';
 import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 
 import OrderReview from './components/OrderReview/OrderReview';
+import PlaceOrder from './components/PlaceOrder/PlaceOrder';
 import Shop from './components/Shop/Shop';
 
 function App() {
   return (
     <div>
       <Router>
-      <Header></Header>
+        <Header></Header>
         <Switch>
           <Route exact path="/">
             <Shop></Shop>
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/inventory">
             <Inventory></Inventory>
+          </Route>
+          <Route exact path="/placeorder">
+            <PlaceOrder></PlaceOrder>
           </Route>
           <Route path="*">
             <NotFoundPage></NotFoundPage>
