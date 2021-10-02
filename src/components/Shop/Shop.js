@@ -3,6 +3,7 @@ import Cart from '../Cart/Cart';
 import Product from '../Product/Product';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
 import './Shop.css';
+import { Link } from 'react-router-dom';
 
 const Shop = () => {
     const [products, setProducts] = useState([]);
@@ -70,7 +71,11 @@ const Shop = () => {
                     }
                 </div>
                 <div className="cart-container">
-                    <Cart cart={cart}></Cart>
+                    <Cart cart={cart}>
+                        <Link to ="/review">
+                            <button className="btn-regular">Review Order</button>
+                        </Link>
+                    </Cart>
                 </div>
             </div>
         </>

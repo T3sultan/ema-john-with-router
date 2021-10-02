@@ -30,9 +30,9 @@ const OrderReview = () => {
 
             </div>
             <div className="cart-container">
-                <Cart
-                    cart={cart}
-                ></Cart>
+                <Cart cart={cart}>
+                    <button className='btn-regular'>Place Order</button>
+                </Cart>
 
             </div>
         </div>
